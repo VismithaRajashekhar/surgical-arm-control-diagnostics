@@ -1,11 +1,11 @@
-# 🤖 RBA-2201 Surgical Arm Control Optimization
+#  RBA-2201 Surgical Arm Control Optimization
 ### Johnson & Johnson MedTech — Robotics & Controls Engineering
 
 > **Internship Project** | Diagnosing and resolving response delays in a surgical robotic arm (Model RBA-2201), followed by a full hardware design optimization proposal.
 
 ---
 
-## 📋 Project Overview
+##  Project Overview
 
 This repository documents the complete engineering workflow for **Ticket #2437** — a high-priority issue reported by Dr. Emily Chen (Senior Surgeon) at Mercy General Hospital, Rockville, Maryland. The `rotate_joint` command on the RBA-2201 surgical robotic arm was exhibiting response times of **0.35 seconds**, nearly double its 0.18-second target threshold, posing a direct risk to surgical precision.
 
@@ -18,7 +18,7 @@ The project is split into two tasks:
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 surgical-arm-control-diagnostics/
@@ -42,7 +42,7 @@ surgical-arm-control-diagnostics/
 
 ---
 
-## 🔬 Task 1 — Control System Diagnostics
+##  Task 1 — Control System Diagnostics
 
 ### Problem
 The `rotate_joint` command was clocking **0.35 s** against a 0.18 s target — a 94% excess. `move_arm` (0.10 s) and `adjust_grip` (0.09 s) were both within expected ranges.
@@ -58,13 +58,13 @@ The `rotate_joint` command was clocking **0.35 s** against a 0.18 s target — a
 - Consolidated conditional branches from 8 to 3
 
 ### Result
-`rotate_joint` post-fix: **0.17 s** ✅ (within 0.18 s threshold), validated over 10 consecutive test runs.
+`rotate_joint` post-fix: **0.17 s**  (within 0.18 s threshold), validated over 10 consecutive test runs.
 
-📄 **Full report:** [`reports/Diagnostic_Report_Ticket2437.docx`](reports/Diagnostic_Report_Ticket2437.docx)
+ **Full report:** [`reports/Diagnostic_Report_Ticket2437.docx`](reports/Diagnostic_Report_Ticket2437.docx)
 
 ---
 
-## ⚙️ Task 2 — Design Optimization Proposal
+##  Task 2 — Design Optimization Proposal
 
 ### Three Hardware Modifications Proposed
 
@@ -93,11 +93,11 @@ The `rotate_joint` command was clocking **0.35 s** against a 0.18 s target — a
 | Sensor feedback delay | 48 ms | **31 ms** |
 | System reliability score | 71/100 | **94/100** |
 
-📄 **Full proposal:** [`reports/Design_Proposal_RBA2201_Task2.docx`](reports/Design_Proposal_RBA2201_Task2.docx)
+ **Full proposal:** [`reports/Design_Proposal_RBA2201_Task2.docx`](reports/Design_Proposal_RBA2201_Task2.docx)
 
 ---
 
-## 🐍 Running the Diagnostic Notebook
+##  Running the Diagnostic Notebook
 
 ### Requirements
 ```bash
@@ -122,7 +122,7 @@ python scripts/response_time_checker.py
 
 ---
 
-## 🛠️ Tools & Technologies
+##  Tools & Technologies
 
 - **Python 3.x** — Diagnostics and simulation
 - **NumPy / SciPy** — Numerical computation and performance modelling
@@ -131,7 +131,7 @@ python scripts/response_time_checker.py
 
 ---
 
-## 📌 Key References
+##  Key References
 
 - Ticket ID: **#2437**
 - Facility: Mercy General Hospital, Rockville, Maryland
