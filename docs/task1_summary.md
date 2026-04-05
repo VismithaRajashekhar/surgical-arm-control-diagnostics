@@ -16,9 +16,9 @@ The `rotate_joint` command was recording response times of **0.35 seconds** agai
 
 | Command | Expected | Measured | Status |
 |---------|----------|----------|--------|
-| `move_arm` | 0.10 s | 0.10 s | ✔ OK |
-| `rotate_joint` | 0.18 s | **0.35 s** | ✘ DELAYED |
-| `adjust_grip` | 0.09 s | 0.09 s | ✔ OK |
+| `move_arm` | 0.10 s | 0.10 s |  OK |
+| `rotate_joint` | 0.18 s | **0.35 s** |  DELAYED |
+| `adjust_grip` | 0.09 s | 0.09 s |  OK |
 
 ---
 
@@ -46,7 +46,7 @@ Using Python's `time` module and iterative code analysis, three software ineffic
 
 ## Result
 
-Post-fix `rotate_joint` response time: **0.17 s** ✅ (within 0.18 s threshold)
+Post-fix `rotate_joint` response time: **0.17 s**  (within 0.18 s threshold)
 
 Validated across 10 consecutive test runs with a standard deviation of 0.008 s, confirming stability.
 
@@ -60,4 +60,4 @@ Validated across 10 consecutive test runs with a standard deviation of 0.008 s, 
 
 ---
 
-📄 Full report: [`reports/Diagnostic_Report_Ticket2437.docx`](../reports/Diagnostic_Report_Ticket2437.docx)
+ Full report: [`reports/Diagnostic_Report_Ticket2437.docx`](../reports/Diagnostic_Report_Ticket2437.docx)
